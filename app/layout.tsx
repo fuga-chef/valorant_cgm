@@ -6,8 +6,8 @@ import SupabaseListener from "@/app/components/supabaseListener";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "募集掲示板",
-  description: "valorant cgm",
+  title: "Valorant 募集",
+  description: "valorant rectuiting BBS",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

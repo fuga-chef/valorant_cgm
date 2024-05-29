@@ -13,16 +13,16 @@ const Navigation = ({ session }: { session: Session | null }) => {
   return (
     <header>
       <div className="flex items-center justify-between px-4 py-5 bg-white shadow-md">
-        <nav className="hidden md:flex space-x-10 text-xl ml-4">
+        <nav className="hidden md:flex space-x-10 text-lg ml-4">
           <div>
             <Link className="text-gray-600 hover:text-blue-600" href="/">
-              Home
+              ホーム
             </Link>
           </div>
           {session ? (
             <div>
               <Link className="text-gray-600 hover:text-blue-600" href="/profile">
-                Profile
+                マイページ
               </Link>
             </div>
           ) : (

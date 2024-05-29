@@ -15,13 +15,13 @@ const ModalCore = ({ modalType }: Props) => {
   switch (modalType) {
     case ModalType.SignIn:
       title = "ログインフォーム";
-      headerButton = "Login";
+      headerButton = "ログイン";
       formElement = <SignInForm showModal={setShowModal}></SignInForm>;
       break;
 
     case ModalType.SignUp:
       title = "ユーザ登録フォーム";
-      headerButton = "Sign Up";
+      headerButton = "登録";
       formElement = <SignUpForm showModal={setShowModal}></SignUpForm>;
       break;
   }
@@ -41,7 +41,7 @@ const ModalCore = ({ modalType }: Props) => {
                     <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                     </svg>
-                    <span className="sr-only">モーダルを閉じる</span>
+                    <span className="sr-only">閉じる</span>
                   </button>
                 </div>
                 <div className="p-4 md:p-5">{formElement}</div>
